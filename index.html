@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC Adobe for Students</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo" aria-label="UC Adobe for Students - Home">
+                    <img src="assets/uc-logo.png" alt="University of California" class="logo-img">
+                    <span class="logo-text">Adobe for Students</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    <a href="compare.html" class="nav-link">Compare Plans</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="cta-desktop">
+                    <a href="getdeal.html" class="btn btn-gold btn-large">Get the DEAL!</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-menu">
+                <nav role="navigation" aria-label="Mobile navigation">
+                    <a href="index.html" class="mobile-nav-link active" aria-current="page">Home</a>
+                    <a href="compare.html" class="mobile-nav-link">Compare Plans</a>
+                    <a href="faq.html" class="mobile-nav-link">FAQ</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                    <div class="mobile-cta">
+                        <a href="getdeal.html" class="btn btn-primary btn-full">Redeem UC Student Discount</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Left Content -->
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span>Exclusive UC Student Offer</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Adobe Creative Cloud for 
+                            <span class="text-gold">UC Students</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Get the complete Adobe Creative Suite for just <span class="price-highlight">$49.99/year</span> — 
+                            that's 90% off the regular price. Exclusively for UC students at participating campuses.*
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="getdeal.html" class="btn btn-gold btn-large"> Redeem UC Student Discount</a>
+                            <a href="compare.html" class="btn btn-secondary btn-large">Learn More</a>
+                        </div>
+                        
+                        <div class="hero-features">
+                            <div class="feature-item">
+                                <span class="check-icon">✓</span>
+                                <span>20+ Creative Apps</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="check-icon">✓</span>
+                                <span>100GB Cloud Storage</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="check-icon">✓</span>
+                                <span>Premium Fonts</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="check-icon">✓</span>
+                                <span>Mobile Apps</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Content - Pricing Comparison -->
+                    <div class="pricing-comparison">
+                        <h2 class="pricing-title">Price Comparison</h2>
+                        
+                        <div class="pricing-cards">
+                            <!-- UC Student Price -->
+                            <div class="pricing-card featured">
+                                <div class="pricing-header">
+                                    <h3>UC Student Price</h3>
+                                    <p>Annual subscription</p>
+                                </div>
+                                <div class="pricing-amount">
+                                    <span class="price-highlight">$49.99</span>
+                                    <span class="period">/year</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Regular Educational Price -->
+                            <div class="pricing-card">
+                                <div class="pricing-header">
+                                    <h3>Adobe Education Price</h3>
+                                    <p>Regular student pricing</p>
+                                </div>
+                                <div class="pricing-amount">
+                                    <span class="price crossed-out">$239.88</span>
+                                    <span class="period">/year</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Regular Price -->
+                            <div class="pricing-card">
+                                <div class="pricing-header">
+                                    <h3>Regular Price</h3>
+                                    <p>Full retail pricing</p>
+                                </div>
+                                <div class="pricing-amount">
+                                    <span class="price crossed-out">$659.88</span>
+                                    <span class="period">/year</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="savings-highlight">
+                            <p>You Save Over $600!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Overview -->
+        <section class="product-overview">
+            <div class="container">
+                <h2 class="section-title">What's Included</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+						<img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/photoshop.svg" width="75" alt="Adobe Photoshop Logo" />
+                        <h3>Photoshop</h3>
+                        <p>Combine, retouch, and remix your pics</p>
+                    </div>
+                    <div class="feature-card">
+						<img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/illustrator.svg" width="75" alt="Adobe Illustrator Logo" />
+                        <h3>Illustrator</h3>
+                        <p>Create logos, designs, graphics, and more</p>
+                    </div>
+                    <div class="feature-card">
+						<img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/premiere-pro.svg" width="75" alt="Adobe Premiere Pro Logo" />
+                        <h3>Premiere Pro</h3>
+                        <p>Edit, trim, and craft your videos</p>
+                    </div>
+                    <div class="feature-card">
+						<img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/after-effects.svg" width="75" alt="Adobe After Effects Logo" />
+                        <h3>After Effects</h3>
+                        <p>Cinematic visual effects and motion graphics</p>
+                    </div>
+					 <div class="feature-card">
+						 <img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/indesign.svg" width="75" alt="Adobe Indesign Logo" />
+                        <h3>InDesign</h3>
+                        <p>Design and publish elegant layouts for print and digital</p>
+                    </div>
+					 <div class="feature-card">
+						 <img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/firefly.svg" width="75" alt="Adobe Firefly Logo" />
+                        <h3>Firefly</h3>
+                        <p>Create images, audio, and video, all in one place</p>
+                    </div>
+					 <div class="feature-card">
+						 <img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/express.svg" width="75" alt="Adobe Express logo" />
+                        <h3>Express</h3>
+                        <p>Your all-in one AI content creation app</p>
+                    </div>
+					 <div class="feature-card">
+						 <img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/acrobat-pro.svg" width="75" alt="Adobe Acrobat Logo" />
+                        <h3>Acrobat Pro</h3>
+                        <p>Create, edit, review, and sign PDFs</p>
+                    </div>
+                </div>
+				
+            </div>
+			<div class="container" style="margin-top: 40px"><p style="text-align: center"><a href="https://www.adobe.com/products/catalog.html#category=creativity-design"><button class="btn btn-gold btn-large">Plus additional apps and services</button></a></p></div>
+        </section>
+        
+        <!-- Secondary CTA Section -->
+        <section class="secondary-cta">
+            <div class="container">
+                <div class="secondary-cta-grid">
+                    <!-- Left Content -->
+                    <div class="secondary-cta-content">
+                        <div class="cta-badge">
+                            <span>Essentials Bundle</span>
+                        </div>
+                        <h2 class="cta-title">
+                            Need Just the 
+                            <span class="text-gold">Essentials?</span>
+                        </h2>
+                        <p class="cta-text">
+                            Perfect for students who need document editing and quick design tools. 
+                            Get Adobe Acrobat Pro and Adobe Express for just <span class="text-gold">$29.99/year</span>.
+                        </p>
+                        
+                        <div class="cta-buttons">
+                            <a href="getdeal.html" class="btn btn-gold btn-large">Get Essentials Bundle</a>
+                            <a href="compare.html" class="btn btn-primary btn-large">Compare Plans</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Content - What's Included -->
+                    <div class="essentials-content">
+                        <h3 class="essentials-title">What's Included</h3>
+                        
+                        <div class="essentials-apps">
+                            <!-- Acrobat Pro -->
+                            <div class="app-card">
+                                <div class="app-icon"><img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/acrobat-pro.svg" width="75" alt="Adobe Acrobat Logo" /></div>
+                                <div class="app-info">
+                                    <h4>Adobe Acrobat Pro</h4>
+                                    <p>Complete PDF solution for creating, editing, and signing documents</p>
+                                    <ul>
+                                        <li>• PDF editing and creation</li>
+                                        <li>• Electronic signatures</li>
+                                        <li>• Form creation and filling</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Adobe Express -->
+                            <div class="app-card">
+                                <div class="app-icon"><img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/express.svg" width="75" alt="Adobe Express logo" /></div>
+                                <div class="app-info">
+                                    <h4>Adobe Express</h4>
+                                    <p>Quick and easy design tool for social media, flyers, and presentations</p>
+                                    <ul>
+                                        <li>• Social media graphics</li>
+                                        <li>• Flyers and posters</li>
+                                        <li>• Video creation tools</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Why Choose Our UC Student Program?</h2>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🛡️</div>
+                        <h3>Exceptional Pricing</h3>
+                        <p>You get 12 months of access to industry-standard software at a fraction of standard educational discount.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⚡</div>
+                        <h3>Year-long Activation</h3>
+                        <p>Get 12 months of access to all Adobe Creative Cloud apps after verification.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">👥</div>
+                        <h3>Student Community</h3>
+                        <p>
+                            Join a network of creative UC students on your campus and share your projects. Level up your skills and apply to become an 
+                            <a href="https://www.adobeforeducation.com/student-ambassador-program" target="_blank" rel="noopener">Adobe Student Ambassador</a>!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Students Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p>"Adobe Creative Cloud has been essential for my design projects. The UC student discount made it affordable!"</p>
+                        <div class="testimonial-author">
+                            <strong>Sarah M.</strong>
+                            <span>UC Davis Student</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Perfect for my film studies program. Premiere Pro and After Effects are industry standard."</p>
+                        <div class="testimonial-author">
+                            <strong>David L.</strong>
+                            <span>UCSB Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Final CTA Section -->
+        <section class="final-cta">
+            <div class="container">
+                <div class="final-cta-content">
+                    <h2>Ready to Start Creating?</h2>
+                    <p>Join thousands of UC students who are already using Adobe Creative Cloud to bring their ideas to life.</p>
+                    <a href="getdeal.html" class="btn btn-gold btn-large">Redeem UC Student Discount</a>
+                    <p class="cta-note">* Valid UC student authentication required for license activation. These campuses are participating in the program:
+UC Davis, UC Irvine, UC Santa Barbara, UC San Diego. UCSF</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 University of California. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

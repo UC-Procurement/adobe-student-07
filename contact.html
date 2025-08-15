@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Adobe for Students</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo" aria-label="UC Adobe for Students - Home">
+                    <img src="assets/uc-logo.png" alt="University of California" class="logo-img">
+                    <span class="logo-text">Adobe for Students</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    <a href="compare.html" class="nav-link">Compare Plans</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="cta-desktop">
+                    <a href="getdeal.html" class="btn btn-gold btn-large">Get the DEAL!</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-menu">
+                <nav role="navigation" aria-label="Mobile navigation">
+                    <a href="index.html" class="mobile-nav-link active" aria-current="page">Home</a>
+                    <a href="compare.html" class="mobile-nav-link">Compare Plans</a>
+                    <a href="faq.html" class="mobile-nav-link">FAQ</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                    <div class="mobile-cta">
+                        <a href="getdeal.html" class="btn btn-primary btn-full">Redeem UC Student Discount</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="page-title">Get Help & Support</h1>
+            <p class="page-subtitle">Have questions about your UC Adobe Creative Cloud discount? We're here to help!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <p class="form-subtitle">Fill out the form below and we'll get back to you as soon as possible.</p>
+                   <script type="text/javascript" src="https://ucprocure.formstack.com/forms/js.php/adobe_license_contact_form"></script><noscript><a href="https://ucprocure.formstack.com/forms/adobe_license_contact_form" title="Online Form">Online Form - Adobe License Contact Form</a></noscript>
+
+                </div>
+
+                <!-- Sidebar -->
+                <div class="contact-info">
+                    <div class="cta-card">
+                        <h3>Ready to Get Started?</h3>
+                        <p>Don't wait - claim your UC student discount today!</p>
+                        <a href="#" class="btn btn-gold">Redeem UC Student Discount</a>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-method">
+                            <h4>Email Support</h4>
+                            <div class="contact-value">
+                                <a href="mailto:ucstudentsoftware@ucop.edu">ucstudentsoftware@ucop.edu</a>
+                            </div>
+                            <div class="contact-desc">Get help with your software purchase.</div>
+                        </div>
+
+                        <div class="contact-method">
+                            <h4>Response Time</h4>
+                            <div class="contact-value">1 - 2 business days</div>
+                            <div class="contact-desc">Average response time for student inquiries</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 University of California. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const responseMessage = document.getElementById('responseMessage');
+            
+            // Show loading state
+            const submitBtn = document.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            fetch('process_contact.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    responseMessage.innerHTML = '<div class="message success">' + data.message + '</div>';
+                    this.reset();
+                } else {
+                    responseMessage.innerHTML = '<div class="message error">' + data.message + '</div>';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                responseMessage.innerHTML = '<div class="message error">An error occurred. Please try again.</div>';
+            })
+            .finally(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html>

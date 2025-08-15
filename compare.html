@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Plans - UC Adobe for Students</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo" aria-label="UC Adobe for Students - Home">
+                    <img src="assets/uc-logo.png" alt="University of California" class="logo-img">
+                    <span class="logo-text">Adobe for Students</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    <a href="compare.html" class="nav-link">Compare Plans</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="cta-desktop">
+                    <a href="getdeal.html" class="btn btn-gold btn-large">Get the DEAL!</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-menu">
+                <nav role="navigation" aria-label="Mobile navigation">
+                    <a href="index.html" class="mobile-nav-link active" aria-current="page">Home</a>
+                    <a href="compare.html" class="mobile-nav-link">Compare Plans</a>
+                    <a href="faq.html" class="mobile-nav-link">FAQ</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                    <div class="mobile-cta">
+                        <a href="getdeal.html" class="btn btn-primary btn-full">Redeem UC Student Discount</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Compare Hero -->
+        <section class="compare-hero">
+            <div class="container">
+                <h1 class="page-title">Choose Your Perfect Plan</h1>
+                <p class="page-subtitle">Compare our two UC student offerings to find the plan that best fits your creative needs and budget.</p>
+            </div>
+        </section>
+
+        <!-- Comparison Cards -->
+        <section class="comparison-cards">
+            <div class="container">
+                <div class="plans-grid">
+                    <!-- Creative Cloud Pro Card -->
+                    <div class="plan-card featured">
+                        <div class="popular-badge">MOST POPULAR</div>
+                        <div class="plan-header">
+                            <div class="plan-icon">📦</div>
+                            <h2>Creative Cloud Pro</h2>
+                            <div class="plan-price">
+                                <span class="price-amount">$49.99</span>
+                                <span class="price-period">/year</span>
+                            </div>
+                            <p class="plan-description">Complete creative suite for professionals</p>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature-item">
+                                <span class="check-icon">✓</span>
+                                <span>20+ Premium Creative Apps</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="check-icon">✓</span>
+                                <span>100GB Cloud Storage</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="check-icon">✓</span>
+                                <span>Adobe Fonts & Stock Assets</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="check-icon">✓</span>
+                                <span>Portfolio Website</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary btn-full" href="getdeal.html">Get Creative Cloud Pro</a>
+                    </div>
+                    
+                    <!-- Essentials Bundle Card -->
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <div class="plan-icon">🎨</div>
+                            <h2>Essentials Bundle</h2>
+                            <div class="plan-price">
+                                <span class="price-amount">$29.99</span>
+                                <span class="price-period">/year</span>
+                            </div>
+                            <p class="plan-description">Perfect for documents & quick designs</p>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature-item">
+                                <span class="check-icon">✓</span>
+                                <span>Adobe Acrobat Pro</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="check-icon">✓</span>
+                                <span>Adobe Express</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="check-icon">✓</span>
+                                <span>20GB Cloud Storage</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="check-icon">✓</span>
+                                <span>Adobe Fonts Access</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-outline btn-full" href="getdeal.html">Get Essentials Bundle</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Feature Comparison -->
+        <section class="detailed-comparison">
+            <div class="container">
+                <div class="comparison-table">
+                    <div class="table-header">
+                        <h2>Feature Comparison</h2>
+                    </div>
+                    
+                    <table class="features-table">
+                        <thead>
+                            <tr>
+                                <th>Features</th>
+                                <th>Creative Cloud Pro</th>
+                                <th>Essentials Bundle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Design & Creative Tools -->
+                            <tr class="category-header">
+                                <td colspan="3"><strong>Design & Creative Tools</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Photoshop</td>
+                                <td class="check">✓</td>
+                                <td class="cross">✗</td>
+                            </tr>
+                            <tr>
+                                <td>Illustrator</td>
+                                <td class="check">✓</td>
+                                <td class="cross">✗</td>
+                            </tr>
+                            <tr>
+                                <td>InDesign</td>
+                                <td class="check">✓</td>
+                                <td class="cross">✗</td>
+                            </tr>
+                            <tr>
+                                <td>After Effects</td>
+                                <td class="check">✓</td>
+                                <td class="cross">✗</td>
+                            </tr>
+                            <tr>
+                                <td>Premiere Pro</td>
+                                <td class="check">✓</td>
+                                <td class="cross">✗</td>
+                            </tr>
+                            <tr>
+                                <td>Adobe Express</td>
+                                <td class="check">✓</td>
+                                <td class="check">✓</td>
+                            </tr>
+                            
+                            <!-- Document & PDF Tools -->
+                            <tr class="category-header">
+                                <td colspan="3"><strong>Document & PDF Tools</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Acrobat Pro</td>
+                                <td class="check">✓</td>
+                                <td class="check">✓</td>
+                            </tr>
+                            <tr>
+                                <td>Advanced PDF Editing</td>
+                                <td class="check">✓</td>
+                                <td class="check">✓</td>
+                            </tr>
+                            <tr>
+                                <td>Electronic Signatures</td>
+                                <td class="check">✓</td>
+                                <td class="check">✓</td>
+                            </tr>
+                            <tr>
+                                <td>Form Creation</td>
+                                <td class="check">✓</td>
+                                <td class="check">✓</td>
+                            </tr>
+                            
+                            <!-- Web & Digital Publishing -->
+                            <tr class="category-header">
+                                <td colspan="3"><strong>Web & Digital Publishing</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Dreamweaver</td>
+                                <td class="check">✓</td>
+                                <td class="cross">✗</td>
+                            </tr>
+                            <tr>
+                                <td>Animate</td>
+                                <td class="check">✓</td>
+                                <td class="cross">✗</td>
+                            </tr>
+                            <tr>
+                                <td>XD (Prototyping)</td>
+                                <td class="check">✓</td>
+                                <td class="cross">✗</td>
+                            </tr>
+                            
+                            <!-- 3D & AR -->
+                            <tr class="category-header">
+                                <td colspan="3"><strong>3D & AR</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Dimension</td>
+                                <td class="check">✓</td>
+                                <td class="cross">✗</td>
+                            </tr>
+                            <tr>
+                                <td>Substance 3D Suite</td>
+                                <td class="check">✓</td>
+                                <td class="cross">✗</td>
+                            </tr>
+                            
+                            <!-- Additional Benefits -->
+                            <tr class="category-header">
+                                <td colspan="3"><strong>Additional Benefits</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Cloud Storage</td>
+                                <td>100GB</td>
+                                <td>20GB</td>
+                            </tr>
+                            <tr>
+                                <td>Adobe Fonts</td>
+                                <td class="check">✓</td>
+                                <td class="check">✓</td>
+                            </tr>
+                            <tr>
+                                <td>Portfolio Website</td>
+                                <td class="check">✓</td>
+                                <td class="cross">✗</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 University of California. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

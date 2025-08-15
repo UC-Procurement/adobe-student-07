@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <style>
+
+        
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        
+        .campus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .campus-button {
+            display: block;
+            padding: 18px 20px;
+            background: linear-gradient(135deg, #003262 0%, #0066cc 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,50,98,0.2);
+        }
+        
+        .campus-button:hover {
+            background: linear-gradient(135deg, #001a3d 0%, #0052a3 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,50,98,0.3);
+        }
+        
+        .campus-button:active {
+            transform: translateY(0);
+        }
+        
+        .info-note {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #1565c0;
+            text-align: center;
+            border-left: 4px solid #2196f3;
+        }
+        
+        /* Touch device optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .campus-button:hover {
+                transform: none;
+                background: linear-gradient(135deg, #003262 0%, #0066cc 100%);
+            }
+            
+            .campus-button:active {
+                background: linear-gradient(135deg, #001a3d 0%, #0052a3 100%);
+                transform: scale(0.98);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe for UC Students - Pick your campus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo" aria-label="UC Adobe for Students - Home">
+                    <img src="assets/uc-logo.png" alt="University of California" class="logo-img">
+                    <span class="logo-text">Adobe for Students</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    <a href="compare.html" class="nav-link">Compare Plans</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="cta-desktop">
+                    <a href="getdeal.html" class="btn btn-gold btn-large">Get the DEAL!</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-menu">
+                <nav role="navigation" aria-label="Mobile navigation">
+                    <a href="index.html" class="mobile-nav-link active" aria-current="page">Home</a>
+                    <a href="compare.html" class="mobile-nav-link">Compare Plans</a>
+                    <a href="faq.html" class="mobile-nav-link">FAQ</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                    <div class="mobile-cta">
+                        <a href="getdeal.html" class="btn btn-primary btn-full">Redeem UC Student Discount</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- FAQ Hero -->
+        <section class="faq-hero">
+            <div class="container">
+                <h1 class="page-title">Participating Campuses</h1>
+                <p class="page-subtitle">These campuses are participating in the program: <br />UC Davis, UC Irvine, UC Santa Barbara, UC San Diego. and UCSF</p>
+            </div>
+        </section>
+
+<section class="content-section how-it-works">
+    <div class="container">
+        <div class="content-intro">
+            <h2>How it works</h2>
+            <div class="timeline">
+                <div class="timeline-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Pick Your Campus Below</h3>
+                        <p>This takes you to the login portal for your school.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Log In</h3>
+                        <p>Sign in with your campus Single Sign-On (SSO)</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Visit the Store</h3>
+                        <p>You will be redirected to the UC Adobe Software store.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Complete Your Purchase</h3>
+                        <p>Upon successful transaction completion, you'll receive an email receipt confirming your purchase.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>License Provisioning</h3>
+                        <p>At the end of the business day, the UC license automation system will provision your new Adobe license.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Activation Email</h3>
+                        <p>The next business morning, you'll receive an email from the licensing system with your activation details.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h3>Download your software </h3>
+                        <p>Sign in at adobe.com with your UC email, then download and install the Creative Cloud desktop app to access the apps.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-note">
+                Heads up: Licenses take 1-2 business days to provision at your campus.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-intro">
+            <div class="form-container">
+                <h2>Select Your UC Campus</h2>
+                <div class="campus-grid">
+                    <a href="https://transact.ucop.edu/Shibboleth.sso/Login?SAMLDS=1&entityID=urn:mace:incommon:ucdavis.edu" class="campus-button">
+                        UC Davis
+                    </a>
+                    <a href="https://transact.ucop.edu/Shibboleth.sso/Login?SAMLDS=1&entityID=urn:mace:incommon:uci.edu" class="campus-button">
+                        UC Irvine
+                    </a>
+                    <a href="https://transact.ucop.edu/Shibboleth.sso/Login?SAMLDS=1&entityID=urn:mace:incommon:ucsb.edu" class="campus-button">
+                        UC Santa Barbara
+                    </a>
+                    <a href="https://transact.ucop.edu/Shibboleth.sso/Login?SAMLDS=1&entityID=urn:mace:incommon:ucsd.edu" class="campus-button">
+                        UC San Diego
+                    </a>
+                    <a href="https://transact.ucop.edu/Shibboleth.sso/Login?SAMLDS=1&entityID=urn:mace:incommon:ucsf.edu" class="campus-button">
+                        UCSF
+                    </a>
+                </div>
+                <div class="redirect-info">
+                    <strong>Note:</strong> You will be redirected to your campus login page immediately after making a selection.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirectToCampus(url) {
+            if (url) {
+                window.location.href = url;
+            }
+        }
+    </script>
+</section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 University of California. All rights reserved.</p>
+        </div>
+    </footer>
+<style>
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 32px 0;
+    position: relative;
+}
+.timeline-step {
+    display: flex;
+    align-items: flex-start;
+    background: #f8fafc;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,50,98,0.07);
+    padding: 18px 22px;
+    position: relative;
+    border-left: 6px solid #2196f3;
+}
+.timeline-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 24px;
+    top: calc(100% + 2px);
+    width: 2px;
+    height: 24px;
+    background: #2196f3;
+    opacity: 0.2;
+}
+.step-number {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    background: #2196f3;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+    box-shadow: 0 2px 8px rgba(33,150,243,0.15);
+}
+.step-content {
+    flex: 1;
+}
+@media (max-width: 600px) {
+    .timeline-step {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 12px;
+    }
+    .step-number {
+        margin-bottom: 8px;
+        margin-right: 0;
+    }
+}
+</style>
+</html>

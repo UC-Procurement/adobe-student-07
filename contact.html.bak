@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - UC Adobe for Students</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo" aria-label="UC Adobe for Students - Home">
+                    <img src="assets/uc-logo.png" alt="University of California" class="logo-img">
+                    <span class="logo-text">Adobe for Students</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="compare.html" class="nav-link">Compare Plans</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="cta-desktop">
+                    <button class="btn btn-primary">Get the DEAL!</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-menu">
+                <nav role="navigation" aria-label="Mobile navigation">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                    <a href="compare.html" class="mobile-nav-link">Compare Plans</a>
+                    <a href="faq.html" class="mobile-nav-link">FAQ</a>
+                    <a href="contact.html" class="mobile-nav-link active" aria-current="page">Contact</a>
+                    <div class="mobile-cta">
+                        <button class="btn btn-primary btn-full">Redeem UC Student Discount</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Contact Hero -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="page-title">Get Help & Support</h1>
+                <p class="page-subtitle">Have questions about your UC Adobe Creative Cloud discount? We're here to help!</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h2>Send us a Message</h2>
+                        <p class="form-subtitle">Fill out the form below and we'll get back to you as soon as possible.</p>
+                        
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required aria-required="true">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required aria-required="true">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">UC Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="your.name@berkeley.edu" required aria-required="true">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="campus">UC Campus *</label>
+                                <select id="campus" name="campus" required>
+                                    <option value="">Select your UC campus</option>
+                                    <option value="berkeley">UC Berkeley</option>
+                                    <option value="davis">UC Davis</option>
+                                    <option value="irvine">UC Irvine</option>
+                                    <option value="los_angeles">UCLA</option>
+                                    <option value="merced">UC Merced</option>
+                                    <option value="riverside">UC Riverside</option>
+                                    <option value="san_diego">UC San Diego</option>
+                                    <option value="san_francisco">UCSF</option>
+                                    <option value="santa_barbara">UC Santa Barbara</option>
+                                    <option value="santa_cruz">UC Santa Cruz</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="inquiryType">Type of Inquiry *</label>
+                                <select id="inquiryType" name="inquiryType" required>
+                                    <option value="">Select inquiry type</option>
+                                    <option value="subscription">Subscription Issues</option>
+                                    <option value="verification">Student Verification</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="billing">Billing Questions</option>
+                                    <option value="general">General Information</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Please describe your question or issue in detail..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <!-- CTA Card -->
+                        <div class="cta-card">
+                            <h3>Ready to Get Started?</h3>
+                            <p>Don't wait - claim your UC student discount today!</p>
+                            <button class="btn btn-primary">Redeem UC Student Discount</button>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>Contact Information</h3>
+                            
+                            <div class="contact-method">
+                                <h4>Email Support</h4>
+                                <p class="contact-value">ucstudentsoftware@ucop.edu</p>
+                                <p class="contact-desc">Get help with your Adobe Creative Cloud subscription</p>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <h4>Response Time</h4>
+                                <p class="contact-value">Within 24 hours</p>
+                                <p class="contact-desc">Average response time for student inquiries</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Campus IT Support -->
+                        <div class="info-card">
+                            <h3>Campus IT Support</h3>
+                            
+                            <div class="campus-support">
+                                <h4>UC Davis</h4>
+                                <p>530‑754‑HELP</p>
+                                <p>ithelp@ucdavis.edu</p>
+                                <p>Chat available</p>
+                            </div>
+                            
+                            <div class="campus-support">
+                                <h4>UCSD</h4>
+                                <p>(858) 246‑4357</p>
+                                <p>support@ucsd.edu</p>
+                                <p>ITS portal</p>
+                            </div>
+                            
+                            <div class="campus-support">
+                                <h4>UCSC</h4>
+                                <p>(831) 459‑4357</p>
+                                <p>help@ucsc.edu</p>
+                                <p>Slug Hub</p>
+                            </div>
+                            
+                            <div class="campus-support">
+                                <h4>UCSB</h4>
+                                <p>(805) 893‑4357</p>
+                                <p>Walk‑in labs</p>
+                                <p>(805) 893‑5000 for broader help</p>
+                            </div>
+                            
+                            <div class="campus-support">
+                                <h4>UCI</h4>
+                                <p>(949) 824‑2222</p>
+                                <p>oit@uci.edu</p>
+                                <p>ZotDesk</p>
+                            </div>
+                            
+                            <div class="campus-support">
+                                <h4>UCSF</h4>
+                                <p>(415) 514‑4100 (24/7)</p>
+                                <p>Chat/tickets available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Preview -->
+        <section class="faq-preview">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions</p>
+                
+                <div class="faq-grid">
+                    <div class="faq-card">
+                        <h3>How do I verify my student status?</h3>
+                        <p>You'll need to provide a valid UC student ID or enrollment verification.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h3>What's included in the student discount?</h3>
+                        <p>Access to the full Adobe Creative Cloud suite with all applications and cloud storage.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h3>How long is the discount valid?</h3>
+                        <p>The discount is valid for the duration of your UC enrollment.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="faq.html" class="btn btn-primary">View All FAQs</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 University of California. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
