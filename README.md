@@ -9,6 +9,7 @@ vanilla/
 ├── index.html          # Main homepage
 ├── contact.html        # Contact page
 ├── faq.html           # FAQ page with accordion
+├── getdeal.html       # SSO links and How the deal works
 ├── compare.html       # Plans comparison page
 ├── styles.css         # All CSS styles
 ├── script.js          # All JavaScript functionality
