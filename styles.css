@@ -1279,6 +1279,9 @@ body {
     text-align: center;
 
 }
+.content-introleft {
+    text-align: left;  
+}
 
 .content-intro h2 {
     font-size: 2rem;
