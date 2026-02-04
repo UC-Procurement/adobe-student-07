@@ -223,4 +223,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Insert current year into elements with class 'current-year'
+    (function insertCurrentYear() {
+        try {
+            const yearEls = document.querySelectorAll('.current-year');
+            if (!yearEls) return;
+            const year = new Date().getFullYear();
+            yearEls.forEach(el => el.textContent = year);
+        } catch (e) {
+            // silently ignore in older browsers
+        }
+    })();
 });
