@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Insert current year into elements with class 'current-year'
+    // Insert current year into footer elements with class 'current-year'
     (function insertCurrentYear() {
         try {
             const yearEls = document.querySelectorAll('.current-year');
